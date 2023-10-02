@@ -52,7 +52,7 @@ RUN wget https://github.com/filebrowser/filebrowser/releases/download/v2.0.16/li
  && mv filebrowser /usr/local/bin/
 
 # Configurer FileBrowser pour pointer vers /app et démarrer sur le port 8080
-RUN filebrowser -r /app -p 8080 -d /config/filebrowser.db config init \
+RUN filebrowser -r /app -p 8080 -a 0.0.0.0 -d /config/filebrowser.db config init \
  && filebrowser -d /config/filebrowser.db users add admin admin --perm.admin
 
 # Définir les volumes
