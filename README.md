@@ -1,4 +1,4 @@
-# RVC All in One
+# RVC AIO
 
 This Docker image is designed to facilitate the deployment and execution of the [Retrieval-based Voice Conversion WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI) project. It includes all the necessary dependencies, pre-trained models, and services, including TensorBoard for monitoring.
 
@@ -26,7 +26,7 @@ Place your datasets and other files in the directories `/dataset` within the `/a
 1. **Pull the Docker Image**
 
    ```sh
-   docker pull pinkfloyd1213/rvc-all-in-one:latest
+   docker pull pinkfloyd1213/rvc-aio:latest
    ```
 
 2. **Run the Docker Container**
@@ -40,7 +40,7 @@ Place your datasets and other files in the directories `/dataset` within the `/a
      -v /path/to/logs:/app/logs \
      -v /path/to/audio:/app/audio \
      -v /path/to/dataset:/app/dataset \
-     pinkfloyd1213/rvc-all-in-one:latest
+     pinkfloyd1213/rvc-aio:latest
    ```
 
    Replace `/path/to/weights`, `/path/to/logs`, `/path/to/audio`, and `/path/to/dataset` with the paths to the corresponding directories on your host machine.
@@ -70,4 +70,4 @@ Place your datasets and other files in the directories `/dataset` within the `/a
 
 For additional information and details on the Retrieval-based Voice Conversion project, refer to the [official GitHub repository](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI).
 
-You can build this image yourself, for that, go check the GitHub's project: [Github repository](https://github.com/PinkFloyd1213/RVC-All-In-One)
+You can build this image yourself, for that, go check the GitHub's project: [GitHub repository](https://github.com/PinkFloyd1213/RVC-AIO)
