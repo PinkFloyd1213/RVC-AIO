@@ -1,4 +1,4 @@
-# RVC Docker Image with FileBrowser and TensorBoard Integration
+# RVC All in One
 
 This Docker image is designed to facilitate the deployment and execution of the [Retrieval-based Voice Conversion WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI) project. It includes all the necessary dependencies, pre-trained models, and services, including TensorBoard for monitoring.
 
