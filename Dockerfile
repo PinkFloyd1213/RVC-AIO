@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM python:3.10-bullseye
+FROM ubuntu:22.04
 
 # Cloner le dépôt GitHub
 RUN apt update && apt install -y git
@@ -14,6 +14,7 @@ EXPOSE 6006
 EXPOSE 8080 
 
 # Installer les dépendances système et Python
+RUN apt install -y -qq python3.10 python3-pip python3.10-venv wget
 RUN apt install -y -qq ffmpeg aria2 unzip
 RUN pip3 install -r requirements.txt
 RUN pip3 install tensorboard
