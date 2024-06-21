@@ -18,6 +18,7 @@ RUN apt install -y -qq python3.10 python3-pip python3.10-venv wget
 RUN apt install -y -qq ffmpeg aria2 unzip
 RUN pip3 install -r requirements.txt
 RUN pip3 install tensorboard
+RUN pip3 install numpy==1.24.3
 
 # Télécharger les modèles pré-entraînés
 RUN aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/pretrained_v2/D40k.pth -d assets/pretrained_v2/ -o D40k.pth
