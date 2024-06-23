@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  rvc-aio:
+    image: pinkfloyd1213/rvc-aio:latest
+    ports:
+      - "7865:7865"
+      - "6006:6006"
+      - "8080:8080"
+    volumes:
+      - ./weights:/app/assets/weights
+      - ./logs:/app/logs
+      - ./audio:/app/audio
+      - ./dataset:/app/dataset
+    restart: unless-stopped
