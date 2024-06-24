@@ -2,6 +2,7 @@ version: '3.8'
 services:
   rvc-aio:
     image: pinkfloyd1213/rvc-aio:latest
+    container_name: RVC_AIO
     ports:
       - "7865:7865"
       - "6006:6006"
